@@ -1,16 +1,12 @@
 package TicTacToe;
-
-
-import Boards.Board1;
-
 import java.util.Scanner;
 
 public class TicTacToe {
     public static void main(String[] args) {
 
-        System.out.println("Zasady - Wygrywa ten, który pierwszy zdobędzie 3 swoje znaki wzdłuż kolumn/wierszy/skosów, zaczyna X");
+        System.out.println("Zasady - Wygrywa ten, który pierwszy zdobędzie 3 swoje znaki wzdłuż kolumn/wierszy/skosów, zaczyna X ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Wpisz ilosc kolumn i wierszy wiekszy od 2");
+        System.out.println("Wpisz ilosc kolumn i wierszy wiekszy od 2 ");
         int numberOfColRow = scanner.nextInt();
         while (numberOfColRow < 2){
             System.out.println("Kolumny i wiersze maja byc wieksze od 2");
