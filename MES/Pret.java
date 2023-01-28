@@ -22,11 +22,6 @@ public class Pret {
         matrixGT(nodePoint);
         matrixmultipliedGTKp(nodePoint,matrixGT(nodePoint),matrixAdd(matrixMultiplied(nodePoint, matrixTransponedAndMultiplied(nodePoint,matrixkiLength,matrixTransponed(nodePoint),matrixki(matrixkiLength)),matrixPi(nodePoint)), nodePoint));
         matrixmultipliedGTKpG(nodePoint,matrixGT(nodePoint),matrixAdd(matrixMultiplied(nodePoint, matrixTransponedAndMultiplied(nodePoint,matrixkiLength,matrixTransponed(nodePoint),matrixki(matrixkiLength)),matrixPi(nodePoint)), nodePoint));
-
-
-
-
-
     }
     public static int[][] matrixki(int matrixkiLength){
         int[][] ki = new int[matrixkiLength][matrixkiLength];
