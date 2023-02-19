@@ -23,7 +23,6 @@ public class Belka {
         transponedAndMultipliedALL(m, transponedAndMultiplied(m, macierzprzyporzadkowaniaPiT(m),macierzsztywnoscik(E,J,m)),macierzprzyporzadkowaniaPi(m));
         matrixAdd(m,transponedAndMultipliedALL(m, transponedAndMultiplied(m, macierzprzyporzadkowaniaPiT(m),macierzsztywnoscik(E,J,m)),macierzprzyporzadkowaniaPi(m)));
         matrixKp(m,transponedAndMultipliedALL(m, transponedAndMultiplied(m, macierzprzyporzadkowaniaPiT(m),macierzsztywnoscik(E,J,m)),macierzprzyporzadkowaniaPi(m)));
-        matrixCounting();
     }
     public static int[][][] macierzsztywnoscik(int E ,int J, int m) {
         Scanner scanner = new Scanner(System.in);
@@ -178,25 +177,6 @@ public class Belka {
         return matrixKp;
     }
 
-
-    private static int [][] matrixCounting() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("G (macierz warunków brzegowych)" + " =");
-        int c;
-        System.out.println("Wpisz ilość miejsc zerowych");
-        c = scanner.nextInt();
-
-        int[][] matrixCounting = new int[c][1];
-        for (int i = 0; i < matrixCounting.length; i++) {
-            for (int j = 0; j < 1; j++) {
-                int a;
-                a = scanner.nextInt();
-                matrixCounting[i][j] = a;
-                System.out.print(matrixCounting[i][j] + " ");
-            }
-        }
-        return matrixCounting;
-    }
 
 
 }
